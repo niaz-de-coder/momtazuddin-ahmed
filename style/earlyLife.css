@@ -1,0 +1,106 @@
+#earlyLifeCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    width: 1200px;
+    height: 60vh;
+    background-color: wheat;
+}
+.elcContainer{
+    background-color: #fffffe;
+    width: 320px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+}
+.elcContainer h3{
+    font-size: 1rem;
+    margin: 0;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elcContainer p{
+    font-size: 0.8rem;
+    margin: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elcContainer img{
+    width: 200px;
+    height: 200px;
+}
+.seeMoreDark{
+    background-color: #fffffe;
+    color: #000001;
+}
+.forCenter{
+    gap: 50px;
+}
+
+
+
+
+@media (max-width:200px) {
+    #earlyLifeCon{
+        gap: 20px;
+    }
+    .elcContainer{
+        width: 28px;
+        height: 10vh;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 0.2rem;
+        height: 1.5vh;
+    }
+    .elcContainer p{
+        font-size: 0.13rem;
+        height: 3vh;
+    }
+    .elcContainer img{
+        width: 16px;
+        height: 16px;
+    }
+    .forCenter{
+        gap: 10px;
+    }
+    
+}
+@media (max-width:100px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 90px;
+        height: 6vh;
+    }
+    .elcContainer{
+        width: 20px;
+        height: 5vh;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 0.1rem;
+        height: 1vh;
+    }
+    .elcContainer p{
+        font-size: 0.09rem;
+        height: 2vh;
+    }
+    .elcContainer img{
+        width: 8px;
+        height: 8px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}

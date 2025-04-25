@@ -1,0 +1,410 @@
+#gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../asset/gallery/Green_field_at_village_bhagbah_-_3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px); /* Adjust blur as needed */
+    z-index: 0;
+}
+
+#gallery > * {
+    position: relative;
+    z-index: 1;
+}
+.forCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#galSection{
+    width: 600px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+#topGal, #bottomGal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 18vh;
+}
+#middleGal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 38vh;
+}
+#topGal1{
+    width: 200px;
+    height: 18vh;
+    background-image: url(../asset/gallery/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#topGal2{
+    width: 200px;
+    height: 18vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#topGal3{
+    width: 200px;
+    height: 18vh;
+    background-image: url(../asset/gallery/img2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#middleGal{
+    background-image: url(../asset/gallery/img4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bottomGal1{
+    width: 200px;
+    height: 18vh;
+    background-image: url(../asset/gallery/img5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bottomGal2{
+    width: 200px;
+    height: 18vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bottomGal3{
+    width: 200px;
+    height: 18vh;
+    background-image: url(../asset/gallery/img3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#seeMoreGal{
+    width: 600px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seeMore{
+    width: 300px;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fffffe;
+    background-color: #000001;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+.seeMore:hover{
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    transition: all 0.3s;
+}
+#topGal1, #topGal3, #bottomGal1, #bottomGal3, #middleGal{
+    border-radius: 25px;
+}
+
+
+@media (max-width:3000px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 1100px;
+        height: 25vh;
+    }
+    .forCenter{
+        height: 90vh;
+    }
+    #galSection{
+        width: 1100px;
+        height: 90vh;
+        gap: 0.8vh;
+    }
+    #topGal, #bottomGal{
+        width: 1100px;
+        height: 25vh;
+    }
+    #middleGal{
+        width: 1100px;
+        height: 30vh;
+    }
+    #seeMoreGal{
+        width: 1100px;
+        height: 5vh;
+    }
+    .seeMore{
+        width: 600px;
+        height: 5vh;
+        font-size: 2rem;
+    }
+}
+@media (max-width:2000px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 700px;
+        height: 25vh;
+    }
+    .forCenter{
+        height: 90vh;
+    }
+    #galSection{
+        width: 700px;
+        height: 90vh;
+        gap: 0.8vh;
+    }
+    #topGal, #bottomGal{
+        width: 700px;
+        height: 25vh;
+    }
+    #middleGal{
+        width: 700px;
+        height: 30vh;
+    }
+    #seeMoreGal{
+        width: 700px;
+        height: 5vh;
+    }
+    .seeMore{
+        width: 350px;
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:1000px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 600px;
+        height: 25vh;
+    }
+    .forCenter{
+        height: 90vh;
+    }
+    #galSection{
+        width: 600px;
+        height: 90vh;
+        gap: 0.8vh;
+    }
+    #topGal, #bottomGal{
+        width: 600px;
+        height: 25vh;
+    }
+    #middleGal{
+        width: 600px;
+        height: 30vh;
+    }
+    #seeMoreGal{
+        width: 600px;
+        height: 5vh;
+    }
+    .seeMore{
+        width: 300px;
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:700px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 400px;
+        height: 18vh;
+    }
+    .forCenter{
+        height: 60vh;
+    }
+    #galSection{
+        width: 400px;
+        height: 60vh;
+        gap: 0.8vh;
+    }
+    #topGal, #bottomGal{
+        width: 400px;
+        height: 18vh;
+    }
+    #middleGal{
+        width: 400px;
+        height: 23vh;
+    }
+    #seeMoreGal{
+        width: 400px;
+        height: 3vh;
+    }
+    .seeMore{
+        width: 200px;
+        height: 3vh;
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 280px;
+        height: 10vh;
+    }
+    .forCenter{
+        height: 45vh;
+    }
+    #galSection{
+        width: 280px;
+        height: 45vh;
+        gap: 0.8vh;
+    }
+    #topGal, #bottomGal{
+        width: 280px;
+        height: 10vh;
+    }
+    #middleGal{
+        width: 280px;
+        height: 15vh;
+    }
+    #seeMoreGal{
+        width: 280px;
+        height: 2.5vh;
+    }
+    .seeMore{
+        width: 150px;
+        height: 2.5vh;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:300px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 70px;
+        height: 6vh;
+    }
+    .forCenter{
+        height: 27vh;
+    }
+    #galSection{
+        width: 190px;
+        height: 25vh;
+        gap: 0.5vh;
+    }
+    #topGal, #bottomGal{
+        width: 190px;
+        height: 6vh;
+    }
+    #middleGal{
+        width: 190px;
+        height: 10vh;
+    }
+    #seeMoreGal{
+        width: 190px;
+        height: 1.2vh;
+    }
+    .seeMore{
+        width: 100px;
+        height: 1.2vh;
+        font-size: 0.5rem;
+    }
+}
+@media (max-width:200px) {
+    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
+        width: 35px;
+        height: 4vh;
+    }
+    .forCenter{
+        height: 18vh;
+    }
+    #galSection{
+        width: 100px;
+        height: 16vh;
+        gap: 0.5vh;
+    }
+    #topGal, #bottomGal{
+        width: 100px;
+        height: 4vh;
+    }
+    #middleGal{
+        width: 100px;
+        height: 6.5vh;
+    }
+    #seeMoreGal{
+        width: 100px;
+        height: 1vh;
+    }
+    .seeMore{
+        width: 50px;
+        height: 1.2vh;
+        font-size: 0.3rem;
+    }
+}
+@media (max-width:100px) {
+    .forCenter{
+        height: 9vh;
+    }
+    #galSection{
+        width: 50px;
+        height: 7vh;
+        gap: 0.2vh;
+    }
+    #topGal, #bottomGal{
+        width: 50px;
+        height: 1.8vh;
+    }
+    #topGal1{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #topGal2{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #topGal3{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #middleGal{
+        width: 50px;
+        height: 3.8vh;
+    }
+    #bottomGal1{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #bottomGal2{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #bottomGal3{
+        width: 15px;
+        height: 1.8vh;
+    }
+    #seeMoreGal{
+        width: 50px;
+        height: 1vh;
+    }
+    .seeMore{
+        width: 25px;
+        height: 0.5vh;
+        font-size: 0.2rem;
+    }
+}
+
+
+
+
+
