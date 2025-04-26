@@ -4,7 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .dark-bg{
-    background-color: #000001;
+    background-color: #000001 !important;
 }
 .light-bg{
     background-color: #fffffe;

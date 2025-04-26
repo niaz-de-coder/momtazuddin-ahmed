@@ -17,6 +17,7 @@
     align-items: center;
     text-align: center;
     border-radius: 25px 25px 0px 0px;
+    cursor: pointer;
 }
 .elcContainer h3{
     font-size: 1rem;
@@ -49,29 +50,201 @@
 
 
 
-@media (max-width:200px) {
+
+
+@media (max-width:3000px) {
     #earlyLifeCon{
-        gap: 20px;
+        gap: 10px;
+        width: 2000px;
+        height: 80vh;
     }
     .elcContainer{
-        width: 28px;
+        width: 600px;
+        height: 60vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 2rem;
         height: 10vh;
+    }
+    .elcContainer p{
+        font-size: 1.5rem;
+        height: 12vh;
+    }
+    .elcContainer img{
+        width: 500px;
+        height: 500px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:2000px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 1000px;
+        height: 80vh;
+    }
+    .elcContainer{
+        width: 300px;
+        height: 60vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 1.5rem;
+        height: 10vh;
+    }
+    .elcContainer p{
+        font-size: 1rem;
+        height: 12vh;
+    }
+    .elcContainer img{
+        width: 250px;
+        height: 250px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:1500px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 1000px;
+        height: 80vh;
+    }
+    .elcContainer{
+        width: 300px;
+        height: 60vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 1.5rem;
+        height: 10vh;
+    }
+    .elcContainer p{
+        font-size: 1rem;
+        height: 12vh;
+    }
+    .elcContainer img{
+        width: 200px;
+        height: 200px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:1000px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 500px;
+        height: 50vh;
+    }
+    .elcContainer{
+        width: 150px;
+        height: 40vh;
         border-radius: 5px 5px 0px 0px;
     }
     .elcContainer h3{
-        font-size: 0.2rem;
-        height: 1.5vh;
+        font-size: 1rem;
+        height: 6vh;
     }
     .elcContainer p{
-        font-size: 0.13rem;
-        height: 3vh;
+        font-size: 0.6rem;
+        height: 8vh;
     }
     .elcContainer img{
-        width: 16px;
-        height: 16px;
+        width: 100px;
+        height: 100px;
     }
     .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:500px) {
+    #earlyLifeCon{
         gap: 10px;
+        width: 300px;
+        height: 30vh;
+    }
+    .elcContainer{
+        width: 90px;
+        height: 20vh;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 0.7rem;
+        height: 3.5vh;
+    }
+    .elcContainer p{
+        font-size: 0.4rem;
+        height: 6vh;
+    }
+    .elcContainer img{
+        width: 50px;
+        height: 50px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:300px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 200px;
+        height: 20vh;
+    }
+    .elcContainer{
+        width: 50px;
+        height: 15vh;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 0.4rem;
+        height: 2vh;
+    }
+    .elcContainer p{
+        font-size: 0.2rem;
+        height: 4vh;
+    }
+    .elcContainer img{
+        width: 30px;
+        height: 30px;
+    }
+    .forCenter{
+        gap: 5px;
+    }
+    
+}
+@media (max-width:200px) {
+    #earlyLifeCon{
+        gap: 10px;
+        width: 90px;
+        height: 6vh;
+    }
+    .elcContainer{
+        width: 20px;
+        height: 5vh;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .elcContainer h3{
+        font-size: 0.1rem;
+        height: 1vh;
+    }
+    .elcContainer p{
+        font-size: 0.09rem;
+        height: 2vh;
+    }
+    .elcContainer img{
+        width: 8px;
+        height: 8px;
+    }
+    .forCenter{
+        gap: 5px;
     }
     
 }
