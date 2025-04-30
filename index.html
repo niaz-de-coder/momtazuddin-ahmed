@@ -14,6 +14,8 @@
      <link rel="stylesheet" href="style/career.css">
      <link rel="stylesheet" href="style/personal.css">
      <link rel="stylesheet" href="style/writer.css">
+     <link rel="stylesheet" href="style/award.css">
+     <link rel="stylesheet" href="style/screentheatre.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -39,7 +41,7 @@
                 </li><li>
                     <a href="#writerWorks">Writer Works</a>
                 </li><li>
-                    <a href="#screen&Theatre">Screen & Theatre</a>
+                    <a href="#screenTheatre">Screen & Theatre</a>
                 </li><li>
                     <a href="#awards">Awards</a>
                 </li><li>
@@ -180,8 +182,8 @@
                     <img id="wwciCon" src="asset/gallery/img1.png" alt="">
                 </div>
                 <div id="wwcEle">
-                    <h1 id="wwceH">Book</h1>
-                    <p id="wwceP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error delectus, esse molestias magni blanditiis omnis saepe enim adipisci aliquid libero similique nobis minus deleniti officiis voluptatem aliquam eos laborum quae debitis repudiandae suscipit distinctio non autem quam. Aliquam iusto ipsam temporibus ea, quos labore ex quasi neque eius earum molestiae.</p>
+                    <h1 id="wwceH"></h1>
+                    <p id="wwceP"></p>
                     <div id="wwcBtn">
                         <a id="seeAllWriter" href="">See All</a>
                         <a id="buyNowWriter" href="">Buy Now</a>
@@ -190,16 +192,28 @@
             </main>
         </section>
     </section>
-    <section id="screen&Theatre" class="section dark-bg">
-        <main class="headline">
-            <h1 class="light-color">Screen Works</h1>
-            <div></div>
-        </main>
-        <main class="headline">
-            <h1 class="light-color">Theatre Works</h1>
-            <div></div>
+    <section id="screenTheatre" class="section dark-bg">
+        <main class="stWorks">
+            <div class="headline">
+                <h1 class="light-color">Screen Works</h1>
+                <div></div>
+            </div>
+            <div class="stCon">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W0GP2KyxF8M?si=iV6ObBn3Gryaxnpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="headline">
+                <h1 class="light-color">Theatre Works</h1>
+                <div></div>
+            </div>
+            <div class="stCon">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W0GP2KyxF8M?si=iV6ObBn3Gryaxnpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="seeMoreST">
+                <a class="seeMore" href="">See More</a>
+            </div>
         </main>
     </section>
+    <!-- Awards -->
     <section id="awards" class="section light-bg">
         <main class="headline">
             <h1 class="dark-color">Awards</h1>
@@ -224,5 +238,6 @@
      <script src="script/career.js"></script>
      <script src="script/personal.js"></script>
      <script src="script/writer.js"></script>
+     <script src="script/award.js"></script>
 </body>
 </html>

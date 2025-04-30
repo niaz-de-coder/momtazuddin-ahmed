@@ -1,0 +1,23 @@
+.stWorks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.stCon{
+    margin-top: 10px;
+    width: 500px;
+    height: 200px;
+}
+#seeMoreST{
+    margin-top: 50px;
+}
+#seeMoreST a{
+    background-color: #fffffe;
+    color: #000001;
+}
+#seeMoreST a:hover{
+    background-color: transparent;
+    color: #fffffe;
+}
