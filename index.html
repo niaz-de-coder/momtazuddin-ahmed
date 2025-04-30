@@ -13,6 +13,7 @@
      <link rel="stylesheet" href="style/earlyLife.css">
      <link rel="stylesheet" href="style/career.css">
      <link rel="stylesheet" href="style/personal.css">
+     <link rel="stylesheet" href="style/writer.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -146,6 +147,7 @@
             </div>
         </section>
     </section>
+    <!-- Personal Life -->
     <section id="personalLife" class="section dark-bg">
         <main class="headline">
             <h1 class="light-color">Personal Life</h1>
@@ -154,23 +156,39 @@
         <section class="forCenter">
             <main id="personalCon">
                 <div id="pcBtn">
-                    <button class="button-21" role="button">Parents</button>
-                    <button class="button-21" role="button">Spouse</button>
-                    <button class="button-21" role="button">Children</button>
-                    <button class="button-21" role="button">Grand Children</button>
+                    <button id="parentsBtn" class="button-21" role="button">Parents</button>
+                    <button id="spouseBtn" class="button-21" role="button">Spouse</button>
+                    <button id="childrenBtn" class="button-21" role="button">Children</button>
+                    <button id="grandChildrenBtn" class="button-21" role="button">Grand Children</button>
                 </div>
                 <div id="pcFunc">
-                    <div></div>
-                    <h1>Name</h1>
+                    <img id="personalImg" src="asset/main-gal/img1.jpeg" alt="">
+                    <h1 id="personalName">Name</h1>
                 </div>
             </main>
         </section>
     </section>
+    <!-- Writer Works -->
     <section id="writerWorks" class="section light-bg">
         <main class="headline">
             <h1 class="dark-color">Writer Works</h1>
             <div></div>
         </main>
+        <section class="forCenter">
+            <main id="writerWorksContent">
+                <div id="wwcImg">
+                    <img id="wwciCon" src="asset/gallery/img1.png" alt="">
+                </div>
+                <div id="wwcEle">
+                    <h1 id="wwceH">Book</h1>
+                    <p id="wwceP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error delectus, esse molestias magni blanditiis omnis saepe enim adipisci aliquid libero similique nobis minus deleniti officiis voluptatem aliquam eos laborum quae debitis repudiandae suscipit distinctio non autem quam. Aliquam iusto ipsam temporibus ea, quos labore ex quasi neque eius earum molestiae.</p>
+                    <div id="wwcBtn">
+                        <a id="seeAllWriter" href="">See All</a>
+                        <a id="buyNowWriter" href="">Buy Now</a>
+                    </div>
+                </div>
+            </main>
+        </section>
     </section>
     <section id="screen&Theatre" class="section dark-bg">
         <main class="headline">
@@ -205,5 +223,6 @@
      <script src="script/earlyLife.js"></script>
      <script src="script/career.js"></script>
      <script src="script/personal.js"></script>
+     <script src="script/writer.js"></script>
 </body>
 </html>

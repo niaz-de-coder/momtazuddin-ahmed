@@ -41,3 +41,162 @@
   .button-21:focus:not(:active) {
     box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
   }
+  #pcBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #pcFunc{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #pcFunc img{
+    width: 70%;
+    height: 70%;
+  }
+  #pcFunc h1{
+    color: #fffffe;
+    font-size: 1.5rem;
+  }
+  #personalCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media (max-width:3000px) {
+    .button-21 {
+      font-size: 3rem;
+      padding: 8px 12px;
+    }
+    #pcBtn{
+      gap: 10px;
+    }
+    #pcFunc{
+      width: 800px;
+      height: 800px;
+    }
+    #pcFunc h1{
+      font-size: 3rem;
+    }
+  }
+  @media (max-width:2000px) {
+    .button-21 {
+      font-size: 2rem;
+      padding: 6px 10px;
+    }
+    #pcBtn{
+      gap: 10px;
+    }
+    #pcFunc{
+      width: 600px;
+      height: 600px;
+    }
+    #pcFunc h1{
+      font-size: 2rem;
+    }
+  }
+  @media (max-width:1500px) {
+    .button-21 {
+      font-size: 1.5rem;
+      padding: 6px 10px;
+    }
+    #pcBtn{
+      gap: 10px;
+    }
+    #pcFunc{
+      width: 600px;
+      height: 600px;
+    }
+    #pcFunc h1{
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width:1000px) {
+    .button-21 {
+      font-size: 1rem;
+      padding: 4px 8px;
+    }
+    #pcBtn{
+      gap: 4px;
+    }
+    #pcFunc{
+      width: 400px;
+      height: 400px;
+    }
+    #pcFunc h1{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:500px) {
+    .button-21 {
+      font-size: 0.7rem;
+      padding: 4px 8px;
+    }
+    #pcBtn{
+      gap: 4px;
+    }
+    #pcFunc{
+      width: 200px;
+      height: 200px;
+    }
+    #pcFunc h1{
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width:300px) {
+    .button-21 {
+      font-size: 0.3rem;
+      padding: 4px 8px;
+    }
+    #pcBtn{
+      gap: 4px;
+    }
+    #pcFunc{
+      width: 120px;
+      height: 120px;
+    }
+    #pcFunc h1{
+      font-size: 0.5rem;
+    }
+  }
+  @media (max-width:200px) {
+    .button-21 {
+      font-size: 0.2rem;
+      padding: 2px 4px;
+    }
+    #pcBtn{
+      gap: 2px;
+    }
+    #pcFunc{
+      width: 80px;
+      height: 80px;
+    }
+    #pcFunc h1{
+      font-size: 0.4rem;
+    }
+  }
+  @media (max-width:100px) {
+    .button-21 {
+      font-size: 0.1rem;
+      padding: 1.5px 5px;
+    }
+    #pcBtn{
+      gap: 1px;
+    }
+    #pcFunc{
+      width: 40px;
+      height: 40px;
+    }
+    #pcFunc h1{
+      font-size: 0.2rem;
+    }
+  }

@@ -1,0 +1,133 @@
+#writerWorksContent{
+    background-color: #000001;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+    height: 80vh;
+    border-radius: 10px;
+}
+#wwcImg, #wwcEle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 95%;
+}
+#wwcEle{
+    align-items: flex-start;
+}
+#wwcImg{
+    align-items: center;
+}
+#wwcImg img{
+    width: 450px;
+    height: 600px;
+}
+#wwcEle h1{
+    color: #fffffe;
+    font-size: 1.5rem;
+}
+#wwcEle p{
+    color: #fffffe;
+    opacity: 80%;
+    font-size: 1rem;
+}
+#wwcBtn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#wwcBtn a{
+    background-color: #fffffe;
+    text-decoration: none;
+    color: #000001;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 1px #fffffe solid;
+}
+#wwcBtn a:hover{
+    background-color: #000001;
+    text-decoration: none;
+    color: #fffffe;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 1px red solid;
+}
+
+
+
+
+
+
+@media (max-width:200px) {
+    #writerWorksContent{
+        width: 95px;
+        height: 16vh;
+        border-radius: 10px;
+    }
+    #wwcImg img{
+        width: 40px;
+        height: 80px;
+    }
+    #wwcEle h1{
+        font-size: 0.4rem;
+    }
+    #wwcEle p{
+        font-size: 0.2rem;
+    }
+    #wwcBtn{
+        gap: 4px;
+    }
+    #wwcBtn a{
+        width: 16px;
+        height: 4px;
+        font-size: 0.2rem;
+        border-radius: 2.5px;
+        border: 1px #fffffe solid;
+    }
+}
+@media (max-width:100px) {
+    #writerWorksContent{
+        width: 80px;
+        height: 8vh;
+        border-radius: 10px;
+    }
+    #wwcImg img{
+        width: 25px;
+        height: 35px;
+    }
+    #wwcEle h1{
+        font-size: 0.2rem;
+    }
+    #wwcEle p{
+        font-size: 0.1rem;
+    }
+    #wwcBtn{
+        gap: 2px;
+    }
+    #wwcBtn a{
+        width: 12px;
+        height: 3px;
+        font-size: 0.1rem;
+        border-radius: 2.5px;
+        border: 1px #fffffe solid;
+    }
+}
