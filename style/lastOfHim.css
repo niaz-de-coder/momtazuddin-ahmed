@@ -1,0 +1,312 @@
+.lastOfHimSec, .lastBreath, .secondLastBreathSec, .inHisMemory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lastBreath{
+    flex-direction: row !important;
+}
+#memoryUserImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.lastOfHimSec, .secondLastBreathSec{
+    width: 100%;
+}
+.lastBreath{
+    width: 90%;
+    gap: 10%;
+}
+.lastBreath h1, .lastBreath p{
+    color: #fffffe;
+}
+.lastBreath h1{
+    font-size: 2rem;
+}
+.lastBreath p{
+    font-size: 1rem;
+}
+.lastBreath img{
+    width: 40%;
+    border-radius: 25px;
+}
+.lastBreath div{
+    width: 40%;
+}
+.inHisMemory{
+    width: 600px;
+    height: 30vh;
+    background-color: #fffffe;
+    margin-top: 20px;
+    border-radius: 25px;
+    gap: 10px;
+}
+.inHisMemory h1{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.inHisMemory h3{
+    font-size: 1rem;
+    margin: 0;
+}
+.inHisMemory p{
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+}
+
+
+
+
+
+@media (max-width:3000px) {
+    #memoryUserImg{
+        width: 150px;
+        height: 150px;
+    }
+    .lastBreath h1{
+        font-size: 2.5rem;
+    }
+    .lastBreath p{
+        font-size: 1.5rem;
+    }
+    .lastBreath img{
+        border-radius: 25px;
+    }
+    .inHisMemory{
+        width: 1000px;
+        height: 30vh;
+        margin-top: 10px;
+        border-radius: 25px;
+        gap: 10px;
+    }
+    .inHisMemory h1{
+        font-size: 2rem;
+    }
+    .inHisMemory h3{
+        font-size: 1.5rem;
+    }
+    .inHisMemory p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:1500px) {
+    #memoryUserImg{
+        width: 100px;
+        height: 100px;
+    }
+    .lastBreath h1{
+        font-size: 2rem;
+    }
+    .lastBreath p{
+        font-size: 0.7rem;
+    }
+    .lastBreath img{
+        border-radius: 25px;
+    }
+    .inHisMemory{
+        width: 600px;
+        height: 35vh;
+        margin-top: 10px;
+        border-radius: 25px;
+        gap: 10px;
+    }
+    .inHisMemory h1{
+        font-size: 1.5rem;
+    }
+    .inHisMemory h3{
+        font-size: 1rem;
+    }
+    .inHisMemory p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:1000px) {
+    #memoryUserImg{
+        width: 100px;
+        height: 100px;
+    }
+    .lastBreath h1{
+        font-size: 2rem;
+    }
+    .lastBreath p{
+        font-size: 0.7rem;
+    }
+    .lastBreath img{
+        border-radius: 25px;
+    }
+    .inHisMemory{
+        width: 500px;
+        height: 30vh;
+        margin-top: 10px;
+        border-radius: 25px;
+        gap: 10px;
+    }
+    .inHisMemory h1{
+        font-size: 1.5rem;
+    }
+    .inHisMemory h3{
+        font-size: 1rem;
+    }
+    .inHisMemory p{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width:700px) {
+    #memoryUserImg{
+        width: 60px;
+        height: 60px;
+    }
+    .lastBreath h1{
+        font-size: 1rem;
+    }
+    .lastBreath p{
+        font-size: 0.5rem;
+    }
+    .lastBreath img{
+        border-radius: 10px;
+    }
+    .inHisMemory{
+        width: 300px;
+        height: 20vh;
+        margin-top: 10px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+    .inHisMemory h1{
+        font-size: 1rem;
+    }
+    .inHisMemory h3{
+        font-size: 0.7rem;
+    }
+    .inHisMemory p{
+        font-size: 0.4rem;
+    }
+}
+@media (max-width:500px) {
+    #memoryUserImg{
+        width: 40px;
+        height: 40px;
+    }
+    .lastBreath h1{
+        font-size: 0.8rem;
+    }
+    .lastBreath p{
+        font-size: 0.3rem;
+    }
+    .lastBreath img{
+        border-radius: 10px;
+    }
+    .inHisMemory{
+        width: 200px;
+        height: 13vh;
+        margin-top: 10px;
+        border-radius: 10px;
+        gap: 3px;
+    }
+    .inHisMemory h1{
+        font-size: 0.8rem;
+    }
+    .inHisMemory h3{
+        font-size: 0.5rem;
+    }
+    .inHisMemory p{
+        font-size: 0.3rem;
+    }
+}
+@media (max-width:300px) {
+    #memoryUserImg{
+        width: 25px;
+        height: 25px;
+    }
+    .lastBreath h1{
+        font-size: 0.5rem;
+    }
+    .lastBreath p{
+        font-size: 0.25rem;
+    }
+    .lastBreath img{
+        border-radius: 5px;
+    }
+    .inHisMemory{
+        width: 150px;
+        height: 8vh;
+        margin-top: 10px;
+        border-radius: 5px;
+        gap: 3px;
+    }
+    .inHisMemory h1{
+        font-size: 0.5rem;
+    }
+    .inHisMemory h3{
+        font-size: 0.3rem;
+    }
+    .inHisMemory p{
+        font-size: 0.2rem;
+    }
+}
+@media (max-width:200px) {
+    #memoryUserImg{
+        width: 20px;
+        height: 20px;
+    }
+    .lastBreath h1{
+        font-size: 0.4rem;
+    }
+    .lastBreath p{
+        font-size: 0.12rem;
+    }
+    .lastBreath img{
+        border-radius: 5px;
+    }
+    .inHisMemory{
+        width: 80px;
+        height: 6vh;
+        margin-top: 10px;
+        border-radius: 5px;
+        gap: 3px;
+    }
+    .inHisMemory h1{
+        font-size: 0.3rem;
+    }
+    .inHisMemory h3{
+        font-size: 0.2rem;
+    }
+    .inHisMemory p{
+        font-size: 0.1rem;
+    }
+}
+@media (max-width:100px) {
+    #memoryUserImg{
+        width: 10px;
+        height: 10px;
+    }
+    .lastBreath h1{
+        font-size: 0.2rem;
+    }
+    .lastBreath p{
+        font-size: 0.1rem;
+    }
+    .lastBreath img{
+        border-radius: 5px;
+    }
+    .inHisMemory{
+        width: 60px;
+        height: 4vh;
+        margin-top: 10px;
+        border-radius: 5px;
+        gap: 3px;
+    }
+    .inHisMemory h1{
+        font-size: 0.2rem;
+    }
+    .inHisMemory h3{
+        font-size: 0.1rem;
+    }
+    .inHisMemory p{
+        font-size: 0.05rem;
+    }
+}
