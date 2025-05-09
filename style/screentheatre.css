@@ -1,23 +1,110 @@
-.stWorks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-.stCon{
-    margin-top: 10px;
-    width: 500px;
-    height: 200px;
-}
-#seeMoreST{
-    margin-top: 50px;
-}
-#seeMoreST a{
+#seeMoreScreen a{
     background-color: #fffffe;
     color: #000001;
 }
-#seeMoreST a:hover{
+#seeMoreScreen a:hover{
     background-color: transparent;
     color: #fffffe;
+}
+#seeMoreTheatre a{
+    background-color: #fffffe;
+    color: #000001;
+}
+#seeMoreTheatre a:hover{
+    background-color: transparent;
+    color: #fffffe;
+}
+.screenTheatreCss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.screenTheatreCss iframe{
+    width: 1000px;
+    height: 70vh;
+}
+
+
+@media (max-width:3000px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 2000px;
+        height: 70vh;
+    }
+}
+@media (max-width:2000px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 1500px;
+        height: 70vh;
+    }
+}
+@media (max-width:1500px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 1000px;
+        height: 70vh;
+    }
+}
+@media (max-width:1000px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 700px;
+        height: 65vh;
+    }
+}
+@media (max-width:700px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 500px;
+        height: 50vh;
+    }
+}
+@media (max-width:500px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 300px;
+        height: 30vh;
+    }
+}
+@media (max-width:300px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 190px;
+        height: 15vh;
+    }
+}
+@media (max-width:200px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 100px;
+        height: 10vh;
+    }
+}
+@media (max-width:100px) {
+    .screenTheatreCss{
+        gap: 10px;
+    }
+    .screenTheatreCss iframe{
+        width: 80px;
+        height: 7vh;
+    }
 }
