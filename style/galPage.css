@@ -1,0 +1,141 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fffffe;
+}
+#nav a{
+    color: #000001;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#selectPorV{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 8vh;
+    height: 5vh;
+    position: fixed;
+    gap: 1%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fffffe;
+}
+#selectPorV a{
+    background-color: #000001;
+    color: #fffffe;
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#photos{
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.photosBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.photo{
+    width: 30%;
+}
+#videoes{
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.videoesBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.video{
+    width: 30%;
+}
+
+
+@media (max-width: 400px) {
+    #nav a{
+        font-size: 1.5rem;
+    }
+    #selectPorV a{
+    background-color: #000001;
+    color: #fffffe;
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    }
+}
+@media (max-width: 300px) {
+    #nav a{
+        font-size: 1.2rem;
+    }
+    #selectPorV a{
+    background-color: #000001;
+    color: #fffffe;
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    }
+}
+@media (max-width: 200px) {
+    #nav a{
+        font-size: 0.6rem;
+    }
+    #selectPorV a{
+    background-color: #000001;
+    color: #fffffe;
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.5rem;
+    }
+}
