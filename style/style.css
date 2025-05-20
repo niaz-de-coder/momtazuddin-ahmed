@@ -1,705 +1,156 @@
 body{
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    font-family: "Poppins", arial, sans-serif;
 }
-.dark-bg{
-    background-color: #000001 !important;
-}
-.light-bg{
-    background-color: #fffffe;
-}
-#navBar{
-    width: 100%;
-    height: 10vh;
+#nav{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80%;
     top: 0;
-    top: 0;
+    z-index: 100;
     left: 0;
-    z-index: 1000; /* Higher than other content */
+    background-color: transparent;
 }
-#navBar img{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-}
-#navBtn{
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fffffe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navList li{
+#navLogo{
     width: 100%;
-    height: 50px;
+    height: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-#navList a{
-    font-size: 1.5rem;
+#navLogo h3, #navLogo p{
+    margin: 0;
+    color: #fffffe;
+}
+#navLogo p{
+    color: #fffffe;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+}
+#navMenu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#navMenu a{
     text-decoration: none;
     color: #fffffe;
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-bottom: 1px solid transparent;
 }
-.light-color{
-    color: #fffffe;
-}
-.dark-color{
-    color: #000001;
+#navMenu a:hover{
+    border-bottom: 1px solid #fffffe;
+    transition: 0.3s;
 }
 
-
-
-
-
-@media (max-width:3000px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 150px;
-        height: 150px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 2.5rem;
-        cursor: pointer;
-        color: #fffffe;
-    }
-    #navList li{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
-        font-size: 2.3rem;
-        text-decoration: none;
-        color: #fffffe;
-    }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
-    }
-}
-@media (max-width:2500px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 2rem;
-        height: 2rem;
-        font-size: 2rem;
-        cursor: pointer;
-        color: #fffffe;
-    }
-    #navList li{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
-        font-size: 2rem;
-        text-decoration: none;
-        color: #fffffe;
-    }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
-    }
-}
-@media (max-width:2000px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 90px;
-        height: 90px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 1.7rem;
-        height: 1.7rem;
-        font-size: 1.7rem;
-        cursor: pointer;
-        color: #fffffe;
-    }
-    #navList li{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
-        font-size: 1.8rem;
-        text-decoration: none;
-        color: #fffffe;
-    }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
-    }
-}
-@media (max-width:1500px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 1.5rem;
-        height: 1.5rem;
-        font-size: 1.3rem;
-        cursor: pointer;
-        color: #fffffe;
-    }
-    #navList li{
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: #fffffe;
-    }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
-    }
-}
-@media (max-width:1000px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 1.5rem;
-        height: 1.5rem;
+@media (max-width: 1500px) {
+    #navLogo h3{
         font-size: 1rem;
-        cursor: pointer;
-        color: #fffffe;
     }
-    #navList li{
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
+    #navLogo p{
         font-size: 1.2rem;
-        text-decoration: none;
-        color: #fffffe;
+        letter-spacing: 0.2rem;
     }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
+    #navMenu a{
+        font-size: 0.8rem;
+        margin: 1rem;
     }
 }
-@media (max-width:500px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 1.5rem;
-        height: 1.5rem;
+@media (max-width: 1000px) {
+    #navLogo h3{
         font-size: 1rem;
-        cursor: pointer;
-        color: #fffffe;
     }
-    #navList li{
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
+    #navLogo p{
         font-size: 1.2rem;
-        text-decoration: none;
-        color: #fffffe;
+        letter-spacing: 0.2rem;
     }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
+    #navMenu a{
+        font-size: 0.6rem;
+        margin: 0.8rem;
     }
 }
-@media (max-width:700px) {
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .dark-bg{
-        background-color: #000001;
-    }
-    .light-bg{
-        background-color: #fffffe;
-    }
-    #navBar{
-        width: 100%;
-        height: 10vh;
-        background-color: transparent;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80%;
-        top: 0;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Higher than other content */
-    }
-    #navBar img{
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-    }
-    #navBtn{
-        width: 1.5rem;
-        height: 1.5rem;
+@media (max-width: 700px) {
+    #navLogo h3{
         font-size: 1rem;
-        cursor: pointer;
-        color: #fffffe;
     }
-    #navList li{
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navList a{
-        width: 100%;
+    #navLogo p{
         font-size: 1.2rem;
-        text-decoration: none;
-        color: #fffffe;
+        letter-spacing: 0.2rem;
     }
-    .light-color{
-        color: #fffffe;
-    }
-    .dark-color{
-        color: #000001;
+    #navMenu a{
+        font-size: 0.45rem;
+        margin: 0.5rem;
     }
 }
-@media (max-width:500px) {
-    body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 500px) {
+    #navLogo h3{
+        font-size: 1rem;
+    }
+    #navLogo p{
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    #navMenu a{
+        font-size: 0.3rem;
+        margin: 0.25rem;
+    }
 }
-.dark-bg{
-    background-color: #000001;
+@media (max-width: 300px) {
+    #navLogo h3{
+        font-size: 0.5rem;
+    }
+    #navLogo p{
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+    #navMenu a{
+        font-size: 0.2rem;
+        margin: 0.15rem;
+    }
 }
-.light-bg{
-    background-color: #fffffe;
+@media (max-width: 200px) {
+    #navLogo h3{
+        font-size: 0.1rem;
+    }
+    #navLogo p{
+        font-size: 0.1rem;
+        letter-spacing: 0.1rem;
+    }
+    #navMenu a{
+        font-size: 0.1rem;
+        margin: 0.1rem;
+    }
 }
-#navBar{
-    width: 100%;
-    height: 10vh;
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70%;
-    top: 0;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Higher than other content */
+@media (max-width: 100px) {
+    #navLogo h3{
+        font-size: 0.1rem;
+    }
+    #navLogo p{
+        font-size: 0.1rem;
+        letter-spacing: 0.1rem;
+    }
+    #navMenu a{
+        font-size: 0.1rem;
+        margin: 0.1rem;
+    }
 }
-#navBar img{
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-}
-#navBtn{
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fffffe;
-}
-#navList li{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navList a{
-    width: 100%;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #fffffe;
-}
-.light-color{
-    color: #fffffe;
-}
-.dark-color{
-    color: #000001;
-}
-}
-@media (max-width:300px) {
-    body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dark-bg{
-    background-color: #000001;
-}
-.light-bg{
-    background-color: #fffffe;
-}
-#navBar{
-    width: 100%;
-    height: 7vh;
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60%;
-    top: 0;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Higher than other content */
-}
-#navBar img{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-#navBtn{
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fffffe;
-}
-#navList li{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navList a{
-    width: 100%;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #fffffe;
-}
-.light-color{
-    color: #fffffe;
-}
-.dark-color{
-    color: #000001;
-}
-}
-@media (max-width:200px) {
-    body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dark-bg{
-    background-color: #000001;
-}
-.light-bg{
-    background-color: #fffffe;
-}
-#navBar{
-    width: 100%;
-    height: 5vh;
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50%;
-    top: 0;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Higher than other content */
-}
-#navBar img{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-}
-#navBtn{
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fffffe;
-}
-#navList li{
-    width: 100%;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navList a{
-    width: 100%;
-    font-size: 0.5rem;
-    text-decoration: none;
-    color: #fffffe;
-}
-.light-color{
-    color: #fffffe;
-}
-.dark-color{
-    color: #000001;
-}
-}
-@media (max-width:100px) {
-    body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dark-bg{
-    background-color: #000001;
-}
-.light-bg{
-    background-color: #fffffe;
-}
-#navBar{
-    width: 100%;
-    height: 5vh;
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50%;
-    top: 0;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Higher than other content */
-}
-#navBar img{
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-}
-#navBtn{
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #fffffe;
-}
-#navList li{
-    width: 100%;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navList a{
-    width: 100%;
-    font-size: 0.5rem;
-    text-decoration: none;
-    color: #fffffe;
-}
-.light-color{
-    color: #fffffe;
-}
-.dark-color{
-    color: #000001;
-}
-}
-
-
-
-
