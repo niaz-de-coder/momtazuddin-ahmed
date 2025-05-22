@@ -1,410 +1,314 @@
 #gallery {
     position: relative;
+    background-image: url("../asset/gallery/bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#gallery::before {
-    content: "";
+#galBlur {
     position: absolute;
-    inset: 0;
-    background-image: url("../asset/gallery/Green_field_at_village_bhagbah_-_3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(4px); /* Adjust blur as needed */
-    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.48);
 }
 
-#gallery > * {
+#galMain {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    /* Optional: add padding or styling as needed */
 }
-.forCenter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-#galSection{
-    width: 600px;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2vh;
-}
-#topGal, #bottomGal{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 18vh;
-}
-#middleGal{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 38vh;
-}
-#topGal1{
-    width: 200px;
-    height: 18vh;
-    background-image: url(../asset/gallery/img1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#topGal2{
-    width: 200px;
-    height: 18vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#topGal3{
-    width: 200px;
-    height: 18vh;
-    background-image: url(../asset/gallery/img2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#middleGal{
-    background-image: url(../asset/gallery/img4.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#bottomGal1{
-    width: 200px;
-    height: 18vh;
-    background-image: url(../asset/gallery/img5.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#bottomGal2{
-    width: 200px;
-    height: 18vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#bottomGal3{
-    width: 200px;
-    height: 18vh;
-    background-image: url(../asset/gallery/img3.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#seeMoreGal{
-    width: 600px;
+#galHead{
+    width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.seeMore{
-    width: 300px;
-    height: 5vh;
+#galBody{
+    width: 100w;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+#galButton{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#galHead h3{
+    font-size: 1.2rem;
+    color: #fffffe;
     text-align: center;
+    letter-spacing: 0.2rem;
+    border-bottom: red 1px solid;
+    padding: 0.3rem;
+}
+#galHead h3 span{
+    font-weight: normal;
+}
+#subGal1Home{
+    background-image: url("../asset/main-gal/img1.jpeg");
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#subGal2Home{
+    background-image: url("../asset/main-gal/img2.jpeg");
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#subGal3Home{
+    background-image: url("../asset/main-gal/img3.jpeg");
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#galBody a{
+    width: 30vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #fffffe;
+    border-radius: 25px;
+}
+.subGalHome{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.subGalHome p{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.48);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    margin: 0;
+    font-size: 0.5rem;
+    transition: 0.3s;
+}
+#galBody a:hover .subGalHome p{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    margin: 0;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#galButton a{
+    width: 15vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fffffe;
+    border-radius: 25px;
     background-color: #000001;
-    border-radius: 25px;
-    font-size: 1.5rem;
-    transition: all 0.3s;
+    font-size: 0.8rem;
+    transition: 0.3s;
 }
-.seeMore:hover{
-    background-color: transparent;
-    color: red;
-    border: 2px solid red;
-    transition: all 0.3s;
-}
-#topGal1, #topGal3, #bottomGal1, #bottomGal3, #middleGal{
-    border-radius: 25px;
+#galButton a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 
-@media (max-width:3000px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 1100px;
-        height: 25vh;
-    }
-    .forCenter{
-        height: 90vh;
-    }
-    #galSection{
-        width: 1100px;
-        height: 90vh;
-        gap: 0.8vh;
-    }
-    #topGal, #bottomGal{
-        width: 1100px;
-        height: 25vh;
-    }
-    #middleGal{
-        width: 1100px;
-        height: 30vh;
-    }
-    #seeMoreGal{
-        width: 1100px;
-        height: 5vh;
-    }
-    .seeMore{
-        width: 600px;
-        height: 5vh;
-        font-size: 2rem;
-    }
-}
-@media (max-width:2000px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 700px;
-        height: 25vh;
-    }
-    .forCenter{
-        height: 90vh;
-    }
-    #galSection{
-        width: 700px;
-        height: 90vh;
-        gap: 0.8vh;
-    }
-    #topGal, #bottomGal{
-        width: 700px;
-        height: 25vh;
-    }
-    #middleGal{
-        width: 700px;
-        height: 30vh;
-    }
-    #seeMoreGal{
-        width: 700px;
-        height: 5vh;
-    }
-    .seeMore{
-        width: 350px;
-        height: 5vh;
-        font-size: 1.5rem;
-    }
-}
-@media (max-width:1000px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 600px;
-        height: 25vh;
-    }
-    .forCenter{
-        height: 90vh;
-    }
-    #galSection{
-        width: 600px;
-        height: 90vh;
-        gap: 0.8vh;
-    }
-    #topGal, #bottomGal{
-        width: 600px;
-        height: 25vh;
-    }
-    #middleGal{
-        width: 600px;
-        height: 30vh;
-    }
-    #seeMoreGal{
-        width: 600px;
-        height: 5vh;
-    }
-    .seeMore{
-        width: 300px;
-        height: 5vh;
-        font-size: 1.2rem;
-    }
-}
 @media (max-width:700px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 400px;
-        height: 18vh;
+    #galHead h3{
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        border-bottom: red 1px solid;
+        padding: 0.1rem;
     }
-    .forCenter{
-        height: 60vh;
+    #galBody{
+        flex-direction: row;
     }
-    #galSection{
-        width: 400px;
-        height: 60vh;
-        gap: 0.8vh;
+    #galBody a{
+        width: 30vw;
+        height: 40vh;
     }
-    #topGal, #bottomGal{
-        width: 400px;
-        height: 18vh;
-    }
-    #middleGal{
-        width: 400px;
-        height: 23vh;
-    }
-    #seeMoreGal{
-        width: 400px;
-        height: 3vh;
-    }
-    .seeMore{
-        width: 200px;
-        height: 3vh;
+    .subGalHome p{
+        width: 100%;
+        height: 10%;
+        backdrop-filter: blur(3px);
+        font-size: 0.5rem;
+    }                                                                       
+    #galBody a:hover .subGalHome p{
         font-size: 1rem;
+    }
+    #galButton a, .subGalHome p, .subGalHome{
+        border-radius: 10px;
+    } 
+    #galButton a{
+        height: 7vh;
+        font-size: 0.8rem;
+    }
+    #galButton a:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 }
 @media (max-width:500px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 280px;
-        height: 10vh;
+    #galHead h3{
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+        border-bottom: red 1px solid;
+        padding: 0.1rem;
     }
-    .forCenter{
-        height: 45vh;
+    #galBody{
+        flex-direction: column;
     }
-    #galSection{
-        width: 280px;
-        height: 45vh;
-        gap: 0.8vh;
+    #galBody a{
+        width: 80vw;
+        height: 25vh;
     }
-    #topGal, #bottomGal{
-        width: 280px;
-        height: 10vh;
+    .subGalHome p{
+        width: 100%;
+        height: 10%;
+        backdrop-filter: blur(3px);
+        font-size: 0.4rem;
+    }                                                                       
+    #galBody a:hover .subGalHome p{
+        font-size: o.6rem;
     }
-    #middleGal{
-        width: 280px;
-        height: 15vh;
+    #galButton a, .subGalHome p, .subGalHome{
+        border-radius: 10px;
+    } 
+    #galButton a{
+        height: 7vh;
+        font-size: 0.4rem;
     }
-    #seeMoreGal{
-        width: 280px;
-        height: 2.5vh;
-    }
-    .seeMore{
-        width: 150px;
-        height: 2.5vh;
-        font-size: 0.8rem;
+    #galButton a:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 }
 @media (max-width:300px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 70px;
-        height: 6vh;
-    }
-    .forCenter{
-        height: 27vh;
-    }
-    #galSection{
-        width: 190px;
-        height: 25vh;
-        gap: 0.5vh;
-    }
-    #topGal, #bottomGal{
-        width: 190px;
-        height: 6vh;
-    }
-    #middleGal{
-        width: 190px;
-        height: 10vh;
-    }
-    #seeMoreGal{
-        width: 190px;
-        height: 1.2vh;
-    }
-    .seeMore{
-        width: 100px;
-        height: 1.2vh;
+    #galHead h3{
         font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+        border-bottom: red 1px solid;
+        padding: 0.1rem;
+    }
+    #galBody{
+        flex-direction: column;
+    }
+    #galBody a{
+        width: 80vw;
+        height: 25vh;
+    }
+    .subGalHome p{
+        width: 100%;
+        height: 10%;
+        backdrop-filter: blur(3px);
+        font-size: 0.3rem;
+    }                                                                       
+    #galBody a:hover .subGalHome p{
+        font-size: o.5rem;
+    }
+    #galButton a, .subGalHome p, .subGalHome{
+        border-radius: 10px;
+    } 
+    #galButton a{
+        height: 7vh;
+        font-size: 0.3rem;
+    }
+    #galButton a:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 }
 @media (max-width:200px) {
-    #topGal1, #topGal2, #topGal3, #bottomGal1, #bottomGal2, #bottomGal3{
-        width: 35px;
-        height: 4vh;
+    #galHead h3{
+        font-size: 0.18rem;
+        letter-spacing: 0.1rem;
+        border-bottom: red 1px solid;
+        padding: 0.1rem;
     }
-    .forCenter{
-        height: 18vh;
+    #galBody{
+        flex-direction: column;
     }
-    #galSection{
-        width: 100px;
-        height: 16vh;
-        gap: 0.5vh;
+    #galBody a{
+        width: 80vw;
+        height: 25vh;
     }
-    #topGal, #bottomGal{
-        width: 100px;
-        height: 4vh;
+    .subGalHome p{
+        width: 100%;
+        height: 10%;
+        backdrop-filter: blur(3px);
+        font-size: 0.15rem;
+    }                                                                       
+    #galBody a:hover .subGalHome p{
+        font-size: o.18rem;
     }
-    #middleGal{
-        width: 100px;
-        height: 6.5vh;
+    #galButton a, .subGalHome p, .subGalHome{
+        border-radius: 5px;
+    } 
+    #galButton a{
+        height: 7vh;
+        font-size: 0.18rem;
     }
-    #seeMoreGal{
-        width: 100px;
-        height: 1vh;
-    }
-    .seeMore{
-        width: 50px;
-        height: 1.2vh;
-        font-size: 0.3rem;
+    #galButton a:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 }
 @media (max-width:100px) {
-    .forCenter{
-        height: 9vh;
+    #galHead h3{
+        font-size: 0.15rem;
+        letter-spacing: 0.1rem;
+        border-bottom: red 1px solid;
+        padding: 0.1rem;
     }
-    #galSection{
-        width: 50px;
-        height: 7vh;
-        gap: 0.2vh;
+    #galBody{
+        flex-direction: column;
     }
-    #topGal, #bottomGal{
-        width: 50px;
-        height: 1.8vh;
+    #galBody a{
+        width: 80vw;
+        height: 25vh;
     }
-    #topGal1{
-        width: 15px;
-        height: 1.8vh;
+    .subGalHome p{
+        width: 100%;
+        height: 10%;
+        backdrop-filter: blur(3px);
+        font-size: 0.1rem;
+    }                                                                       
+    #galBody a:hover .subGalHome p{
+        font-size: o.15rem;
     }
-    #topGal2{
-        width: 15px;
-        height: 1.8vh;
+    #galButton a, .subGalHome p, .subGalHome{
+        border-radius: 5px;
+    } 
+    #galButton a{
+        height: 5vh;
+        font-size: 0.1rem;
     }
-    #topGal3{
-        width: 15px;
-        height: 1.8vh;
-    }
-    #middleGal{
-        width: 50px;
-        height: 3.8vh;
-    }
-    #bottomGal1{
-        width: 15px;
-        height: 1.8vh;
-    }
-    #bottomGal2{
-        width: 15px;
-        height: 1.8vh;
-    }
-    #bottomGal3{
-        width: 15px;
-        height: 1.8vh;
-    }
-    #seeMoreGal{
-        width: 50px;
-        height: 1vh;
-    }
-    .seeMore{
-        width: 25px;
-        height: 0.5vh;
-        font-size: 0.2rem;
+    #galButton a:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 }
-
-
-
-
-

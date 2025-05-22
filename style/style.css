@@ -62,6 +62,9 @@ body{
     border-bottom: 1px solid #fffffe;
     transition: 0.3s;
 }
+.dark-bg{
+    background-color: #000001;
+}
 
 @media (max-width: 1500px) {
     #navLogo h3{
