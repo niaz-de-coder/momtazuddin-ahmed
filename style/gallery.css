@@ -42,7 +42,7 @@
     align-items: center;
     gap: 1vh;
 }
-#galButton{
+.galButton{
     width: 100vw;
     height: 15vh;
     display: flex;
@@ -118,7 +118,7 @@
     font-size: 1rem;
     transition: 0.3s;
 }
-#galButton a{
+.galButton a{
     width: 15vw;
     height: 7vh;
     display: flex;
@@ -131,7 +131,7 @@
     font-size: 0.8rem;
     transition: 0.3s;
 }
-#galButton a:hover{
+.galButton a:hover{
     transform: scale(1.2);
     transition: 0.3s;
 }
@@ -160,14 +160,14 @@
     #galBody a:hover .subGalHome p{
         font-size: 1rem;
     }
-    #galButton a, .subGalHome p, .subGalHome{
+    .galButton a, .subGalHome p, .subGalHome{
         border-radius: 10px;
     } 
-    #galButton a{
+    .galButton a{
         height: 7vh;
         font-size: 0.8rem;
     }
-    #galButton a:hover{
+    .galButton a:hover{
         transform: scale(1.2);
         transition: 0.3s;
     }
@@ -195,14 +195,14 @@
     #galBody a:hover .subGalHome p{
         font-size: o.6rem;
     }
-    #galButton a, .subGalHome p, .subGalHome{
+    .galButton a, .subGalHome p, .subGalHome{
         border-radius: 10px;
     } 
-    #galButton a{
+    .galButton a{
         height: 7vh;
         font-size: 0.4rem;
     }
-    #galButton a:hover{
+    .galButton a:hover{
         transform: scale(1.2);
         transition: 0.3s;
     }
@@ -230,14 +230,14 @@
     #galBody a:hover .subGalHome p{
         font-size: o.5rem;
     }
-    #galButton a, .subGalHome p, .subGalHome{
+    .galButton a, .subGalHome p, .subGalHome{
         border-radius: 10px;
     } 
-    #galButton a{
+    .galButton a{
         height: 7vh;
         font-size: 0.3rem;
     }
-    #galButton a:hover{
+    .galButton a:hover{
         transform: scale(1.2);
         transition: 0.3s;
     }
@@ -265,14 +265,14 @@
     #galBody a:hover .subGalHome p{
         font-size: o.18rem;
     }
-    #galButton a, .subGalHome p, .subGalHome{
+    .galButton a, .subGalHome p, .subGalHome{
         border-radius: 5px;
     } 
-    #galButton a{
+    .galButton a{
         height: 7vh;
         font-size: 0.18rem;
     }
-    #galButton a:hover{
+    .galButton a:hover{
         transform: scale(1.2);
         transition: 0.3s;
     }
@@ -300,14 +300,14 @@
     #galBody a:hover .subGalHome p{
         font-size: o.15rem;
     }
-    #galButton a, .subGalHome p, .subGalHome{
+    .galButton a, .subGalHome p, .subGalHome{
         border-radius: 5px;
     } 
-    #galButton a{
+    .galButton a{
         height: 5vh;
         font-size: 0.1rem;
     }
-    #galButton a:hover{
+    .galButton a:hover{
         transform: scale(1.2);
         transition: 0.3s;
     }

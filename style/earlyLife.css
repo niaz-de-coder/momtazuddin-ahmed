@@ -1,4 +1,4 @@
-#earlyLifeCon{
+/* #earlyLifeCon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,4 +275,116 @@
         gap: 5px;
     }
     
+} */
+
+#earlyLife {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../asset/gallery/elbg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Blur overlay above background image */
+#elBlur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    background: rgba(0,0,0,0.2); /* optional: darken effect */
+    pointer-events: none;
+}
+
+/* All content above the blur */
+#elHead,
+#earlyLifeCon,
+#elButton {
+    position: relative;
+    z-index: 2;
+}
+#earlyLifeCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+    gap: 5vw;
+}
+#elHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+}
+#elHead h3{
+    font-size: 1.2rem;
+    color: #000001;
+    text-align: center;
+    border-bottom: 1px solid red;
+    letter-spacing: 0.2rem;
+}
+#elButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+.elcContainer img{
+    width: 15vw;
+    height: 30vh;
+    opacity: 100%;
+}
+.elcContainer h3{
+    font-size: 1rem;
+    padding: 5px;
+    opacity: 100%;
+}
+.elcContainer p{
+    font-size: 0.6rem;
+    margin: 0;
+    opacity: 100%;
+}
+.elcContainer {
+    background-color: transparent;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elcContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,254,0.5); /* 50% opacity white */
+    border-radius: 20px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.elcContainer img,
+.elcContainer h3,
+.elcContainer p, .galButton {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
 }
