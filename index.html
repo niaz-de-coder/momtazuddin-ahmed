@@ -32,14 +32,15 @@
         </div>
         <div id="navMenu">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
-            <a href="">Early Life</a>
-            <a href="">Career</a>
+            <a href="#earlyLife">Early Life</a>
+            <!-- <a href="">Career</a>
             <a href="">Personal Life</a>
             <a href="">Writer Works</a>
-            <a href="">Screen & Theatre</a>
-            <a href="">Awards</a>
-            <a href="">Last of Him</a>
+            <a href="">Screen & Theatre</a> -->
+            <a href="#awards">Awards</a>
+            <a href="#lastOfHim">Last of Him</a>
         </div>
     </nav>
     <!-- Home -->
@@ -75,32 +76,36 @@
                         </div>
                     </a>
                 </div>
-                <div id="galButton">
+                <div class="galButton">
                     <a href="galPage.html">See More</a>
                 </div>
             </main>
     </section>
     <!-- Early Life -->
     <section id="earlyLife" class="section dark-bg">
+            <div id="elBlur"></div>
+            <div id="elHead">
+                <h3>Early Life</h3>
+            </div>
             <main id="earlyLifeCon">
                 <div class="elcContainer">
-                    <img src="asset/main-gal/img1.jpeg" alt="">
+                    <img src="asset/childhood.png" alt="">
                     <h3>Childhood</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam maxime excepturi facere ex iusto temporibus, est maiores, repellendus dolor labore quis obcaecati animi. Aut natus sapiente eveniet consequatur exercitationem?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, consectetur id quam temporibus quidem explicabo deleniti, adipisci tempora earum cupiditate sint odio? Eligendi distinctio architecto, ut quaerat nostrum ullam similique!</p>
                 </div>
                 <div class="elcContainer">
-                    <img src="asset/main-gal/img2.jpeg" alt="">
+                    <img src="asset/Malda_Zilla_School.jfif" alt="">
                     <h3>School Life</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam maxime excepturi facere ex iusto temporibus, est maiores, repellendus dolor labore quis obcaecati animi. Aut natus sapiente eveniet consequatur exercitationem?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi voluptatem accusamus voluptatibus libero ratione eligendi distinctio, id illo, dignissimos doloremque omnis pariatur similique. Accusamus tenetur quos minima architecto sint.</p>
                 </div>
                 <div class="elcContainer">
-                    <img src="asset/main-gal/img3.jpeg" alt="">
+                    <img src="asset/rajshahicollege.jfif" alt="">
                     <h3>College Life</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam maxime excepturi facere ex iusto temporibus, est maiores, repellendus dolor labore quis obcaecati animi. Aut natus sapiente eveniet consequatur exercitationem?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quia adipisci officia laudantium? Tempore possimus delectus doloribus est labore a ullam ea sed, cupiditate ut dolorem fugit! Exercitationem, eaque explicabo!</p>
                 </div>
             </main>
-            <div id="seeMoreGal">
-                <a class="seeMore seeMoreDark" href="">See More</a>
+            <div class="galButton">
+                <a href="">See More</a>
             </div>
     </section>
     <!-- career -->
@@ -133,7 +138,7 @@
         </section>
     </section> -->
     <!-- Personal Life -->
-    <section id="personalLife" class="section dark-bg">
+    <!-- <section id="personalLife" class="section dark-bg">
         <main class="headline">
             <h1 class="light-color">Personal Life</h1>
             <div></div>
@@ -152,9 +157,9 @@
                 </div>
             </main>
         </section>
-    </section>
+    </section> -->
     <!-- Writer Works -->
-    <section id="writerWorks" class="section light-bg">
+    <!-- <section id="writerWorks" class="section light-bg">
         <main class="headline">
             <h1 class="dark-color">Writer Works</h1>
             <div></div>
@@ -174,9 +179,9 @@
                 </div>
             </main>
         </section>
-    </section>
+    </section> -->
     <!-- Screen and Theatre -->
-    <section id="screenTheatre" class="section dark-bg">
+    <!-- <section id="screenTheatre" class="section dark-bg">
         <main class="headline">
             <h1 class="light-color">Screen Works</h1>
             <div></div>
@@ -203,24 +208,19 @@
                 </div>
             </main>
         </section>
-    </section>
+    </section> -->
     <!-- Awards -->
-    <section id="awards" class="section light-bg">
-        <main class="headline">
-            <h1 class="dark-color">Awards</h1>
-            <div></div>
+    <section id="awards">
+        <div id="awardsBlur"></div>
+        <main class="awardsHead">
+            <h3>Awards</h3>
         </main>
-        <section class="forCenter">
-            <main id="awardSec">
-                <div id="awardSec1">
-                    <img id="awardPhoto" src="asset/gallery/Green_field_at_village_bhagbah_-_3.jpg" alt="">
-                    <h1 id="awardName">Award1</h1>
-                </div>
-                <div id="seeMoreAward">
-                    <a class="seeMore" href="">See More</a>
-                </div>
-            </main>
-        </section>
+        <main id="awardsContent">
+            <h3><span class="semiColon">"</span> <span id="awardName">Award Name</span> <span class="semiColon">"</span></h3>
+        </main>
+        <main class="galButton">
+            <a href="">See All</a>
+        </main>
     </section>
     <!-- Last of Him -->
     <section id="lastOfHim" class="section dark-bg">
@@ -237,14 +237,14 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas laboriosam ut laborum quidem? Quibusdam, at incidunt! Quasi laboriosam amet ipsum inventore dolorem hic iure vitae recusandae! Nostrum aliquam saepe assumenda vel similique molestias quod cum corrupti numquam accusamus deleniti debitis iusto dolore, autem voluptate eaque consectetur cumque in et ipsum.</p>
                     </div>
                 </div>
-                <div class="secondLastBreathSec">
+                <!-- <div class="secondLastBreathSec">
                     <div class="inHisMemory">
                         <h1>In His Memory</h1>
                         <img id="memoryUserImg" src="asset/main-gal/img1.jpeg" alt="">
                         <h3 id="memoryUserTitle">Titas Mahmud</h3>
                         <p id="memoryUserSay">adscsdc</p>
                     </div>
-                </div>
+                </div> -->
             </main>
         </section>
     </section>
